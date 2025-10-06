@@ -243,7 +243,7 @@ def search_pa_list(src: List[str]) -> List[str]:
         a list of answers. Will be ["I don't understand"] if it finds no matches and
         ["No answers"] if it finds a match but no answers
     """
-    pass
+  
 
 
 def query_loop() -> None:
@@ -325,9 +325,8 @@ if __name__ == "__main__":
     assert sorted(
         search_pa_list(["what", "movies", "were", "made", "in", "2020"])
     ) == sorted(["No answers"]), "failed search_pa_list test 3"
-    assert sorted(
-             search_pa_list["what", "movies", "were", "made", "in" "2025"]
-             [""]
+    assert sorted(search_pa_list(["what", "movies", "were", "made", "in" "2025"]))== sorted(
+             ["f1"]
     )
 
     print("All tests passed!")
